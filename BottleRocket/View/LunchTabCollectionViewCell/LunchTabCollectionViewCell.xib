@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="LunchTabCollectionViewCell" customModule="BottleRocket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nfc-RK-pw8">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="my3-Mn-4Du"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kI-oL-ai2">
+                        <rect key="frame" x="6" y="159.5" width="52" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY4-A2-vsh">
+                        <rect key="frame" x="6" y="134" width="79" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3kI-oL-ai2" secondAttribute="bottom" constant="6" id="1Ec-EF-cQX"/>
+                <constraint firstAttribute="trailing" secondItem="nfc-RK-pw8" secondAttribute="trailing" id="60j-FZ-Ps9"/>
+                <constraint firstItem="nfc-RK-pw8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WPY-7W-OBI"/>
+                <constraint firstItem="MY4-A2-vsh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="anp-SW-Im7"/>
+                <constraint firstItem="nfc-RK-pw8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ew9-Kd-aQd"/>
+                <constraint firstItem="3kI-oL-ai2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="fDE-nm-bMx"/>
+                <constraint firstItem="3kI-oL-ai2" firstAttribute="top" secondItem="MY4-A2-vsh" secondAttribute="bottom" constant="6" id="nMs-JL-FyY"/>
+                <constraint firstAttribute="bottom" secondItem="nfc-RK-pw8" secondAttribute="bottom" id="oTf-HN-NFr"/>
+            </constraints>
+            <size key="customSize" width="210" height="180"/>
+            <connections>
+                <outlet property="categoryLabel" destination="3kI-oL-ai2" id="TCx-xZ-Bvz"/>
+                <outlet property="imageView" destination="nfc-RK-pw8" id="btc-0O-GDj"/>
+                <outlet property="restaurantLabel" destination="MY4-A2-vsh" id="Vr0-rD-31C"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-38.169642857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
